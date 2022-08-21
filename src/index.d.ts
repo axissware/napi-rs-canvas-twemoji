@@ -1,7 +1,7 @@
-import { CanvasRenderingContext2D } from "skia-canvas";
+import { SKRSContext2D } from "@napi-rs/canvas"
 
 export async function fillTextWithTwemoji(
-  context: CanvasRenderingContext2D,
+  context: SKRSContext2D,
   text: string,
   x: number,
   y: number,
@@ -9,7 +9,7 @@ export async function fillTextWithTwemoji(
 ): Promise<void>;
 
 export async function strokeTextWithTwemoji(
-  context: CanvasRenderingContext2D,
+  context: SKRSContext2D,
   text: string,
   x: number,
   y: number,
@@ -17,7 +17,7 @@ export async function strokeTextWithTwemoji(
 ): Promise<void>;
 
 export function measureText(
-  context: CanvasRenderingContext2D,
+  context: SKRSContext2D,
   text: string,
   x: number,
   y: number,

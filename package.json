@@ -1,7 +1,7 @@
 {
-  "name": "skia-canvas-twemoji",
-  "version": "0.2.0",
-  "description": "Draw text with Twemoji on skia-canvas. Forked from cagpie's node-canvas-with-twemoji",
+  "name": "napi-rs-canvas-twemoji",
+  "version": "1.0.0",
+  "description": "Draw text with Twemoji on @napi-rs/canvas. Forked from PolestarLabs/skia-canvas-twemoji",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
@@ -9,25 +9,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PolestarLabs/skia-canvas-twemoji.git"
+    "url": "git+https://github.com/axissware/napi-rs-canvas-twemoji.git"
   },
   "bugs": {
-    "url": "https://github.com/PolestarLabs/skia-canvas-twemoji/issues"
+    "url": "https://github.com/axissware/napi-rs-canvas-twemoji/issues"
   },
-  "homepage": "https://github.com/PolestarLabs/skia-canvas-twemoji#readme",
+  "homepage": "https://github.com/axissware/napi-rs-canvas-twemoji#readme",
   "keywords": [
     "canvas",
-    "skia-canvas",
+    "@napi-rs/canvas",
     "twemoji",
     "emoji",
-    "skia-canvas-twemoji"
+    "napi-rs-canvas-twemoji"
   ],
-  "author": "tsumari <tsumari@pollux.gg>",
+  "author": "Axis (axis@axis.moe)",
   "license": "MIT",
   "dependencies": {
     "twemoji": "^14.0.2"
   },
   "devDependencies": {
-    "skia-canvas": "^0.9.30"
+    "@napi-rs/canvas": "^0.1.28"
   }
 }
