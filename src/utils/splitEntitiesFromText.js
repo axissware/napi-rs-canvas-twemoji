@@ -1,18 +1,18 @@
-const { parse } = require('twemoji-parser');
+const { parse } = require("twemoji-parser");
 
 /*
  * Split Text
- * ex) 
+ * ex)
  *  '君👼の味方🤝だよ'
  *  > ['君', TwemojiObj(👼), 'の味方', TwemojiObj(🤝), 'だよ']
  */
-module.exports = function splitEntitiesFromText (text) {
-  const twemojiEntities = parse(text, { assetType: 'png' });
+module.exports = function splitEntitiesFromText(text) {
+  const twemojiEntities = parse(text, { assetType: "png" });
 
   let unparsedText = text;
   let lastTwemojiIndice = 0;
   const textEntities = [];
-  
+
   twemojiEntities.forEach((twemoji) => {
     textEntities.push(
       unparsedText.slice(0, twemoji.indices[0] - lastTwemojiIndice)
@@ -27,4 +27,4 @@ module.exports = function splitEntitiesFromText (text) {
   textEntities.push(unparsedText);
 
   return textEntities;
-}
+};

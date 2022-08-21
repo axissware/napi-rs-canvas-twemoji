@@ -1,8 +1,8 @@
-const { loadImage } = require('@napi-rs/canvas');
+const { loadImage } = require("@napi-rs/canvas");
 
 const cachedTwemojiImages = new Map();
 
-module.exports =  async function loadTwemojiImageByUrl (url) {
+module.exports = async function loadTwemojiImageByUrl(url) {
   return new Promise(async (res) => {
     if (cachedTwemojiImages.has(url)) {
       return res(cachedTwemojiImages.get(url));
@@ -13,4 +13,4 @@ module.exports =  async function loadTwemojiImageByUrl (url) {
 
     return res(image);
   });
-}
+};
